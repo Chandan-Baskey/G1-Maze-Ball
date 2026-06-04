@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2637405487943247045}
   - component: {fileID: 2749147190656139965}
   - component: {fileID: 951085653904036339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bounder2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,9 +117,9 @@ GameObject:
   - component: {fileID: 7209501283381939574}
   - component: {fileID: 4008912929154550351}
   - component: {fileID: 3125640303472862956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bounder
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1172,6 +1172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 2
   maxRotation: 20
+  smoothTime: 0.08
+  usePhysicsRotation: 1
+  mazeRigidbody: {fileID: 0}
 --- !u!1 &6165019399967864176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,9 +1292,9 @@ GameObject:
   - component: {fileID: 81415850647853729}
   - component: {fileID: 993862271964910809}
   - component: {fileID: 8426867577273222599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bounder4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1499,9 +1502,9 @@ GameObject:
   - component: {fileID: 1249419251385949069}
   - component: {fileID: 1847162782917234098}
   - component: {fileID: 705441256526455058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bounder3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
