@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public AudioClip winSound;
     public AudioClip gameOverSound;
     private AudioSource audioSource;
+    [SerializeField] private AudioClip clickSound;
 
     void Start()
     {
@@ -46,6 +47,16 @@ public class GameManager : MonoBehaviour
         {
             GameOver();
         }
+    }
+    private void PlayClick()
+    {
+        if (clickSound != null)
+            AudioSource.PlayClipAtPoint(clickSound, Camera.main.transform.position);
+    }
+    private IEnumerator LoadWithDelay(int sceneIndex)
+    {
+        yield return new WaitForSeconds(0.15f); // wait for click sound
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void WinGame()
@@ -79,18 +90,24 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(currentScene);
+        PlayClick();
+        StartCoroutine(LoadWithDelay(currentScene));
+        //SceneManager.LoadScene(currentScene);
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(nextScene);
+        PlayClick();
+        StartCoroutine(LoadWithDelay(nextScene));
+        //SceneManager.LoadScene(nextScene);
     }
     public void Back()
     {
-        SceneManager.LoadScene(0);
+        PlayClick();
+        StartCoroutine(LoadWithDelay(0));
     }
     public void LevelMenu()
     {
-        SceneManager.LoadScene(1);
+        PlayClick();
+        StartCoroutine(LoadWithDelay(1));
     }
 }
