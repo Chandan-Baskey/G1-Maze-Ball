@@ -1436,7 +1436,7 @@ MonoBehaviour:
   collideSound: {fileID: 0}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   materialBounciness: 1
   bounceCombine: 2
   bounceDamping: 1
