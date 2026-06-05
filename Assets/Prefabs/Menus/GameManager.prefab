@@ -55,3 +55,4 @@ MonoBehaviour:
   nextScene: 3
   winSound: {fileID: 8300000, guid: 3438bb77282b37142ae35ccf25b14482, type: 3}
   gameOverSound: {fileID: 8300000, guid: 7288e981b7572f3428167a97d10b9eae, type: 3}
+  clickSound: {fileID: 8300000, guid: e63c6138f82cee9428b7d92c2466d9bf, type: 3}
